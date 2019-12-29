@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple username input program</title>
+   
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var userName = prompt('Enter your name');
+    userName = userName.toLowerCase();
+    var charsCount = userName.length;
+    var charsSliced = userName.slice(0,1);
+    charsSliced = charsSliced.toUpperCase();
+
+    var restOfName = userName.slice(1,charsCount);
+
+    alert("Hello " + charsSliced + restOfName );
+</script>
